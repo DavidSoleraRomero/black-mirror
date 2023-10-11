@@ -1,0 +1,28 @@
+/********************************************************/
+/*    stylesheet for Black Mirror tribute site          */
+/*    author: David Solera Romero                       */
+/*    version: 1.0                                      */
+/*    comment: project for Lenguajes de Marcas - 1ºDAM  */
+/********************************************************/
+
+/* Incluimos una familia de fuentes */
+@font-face { src: url(../fonts/OpenSans-Regular.ttf);
+            font-family: textonormal;}
+
+@font-face { src: url(../fonts/proxima-nova-bold.otf);
+            font-family:blackmirror;}
+
+body { margin:0; padding: 0; /* Eliminamos el espacio superior en el body */
+    background-color: #13131c;
+    color: #cecad3;
+    font-family: textonormal;}
+
+h1 {font-family:blackmirror;
+    font-weight: bold;
+    text-align: center;
+    color:#ececed;
+    text-shadow: 2px 2px 2px rgb(169, 165, 165);}
+
+#wrapper{background-color: #565B64; 
+        width: 30%; /* El contenido de la página no llega de punta a punta */
+        margin:auto;} /* Se centra el bloque al centro */
