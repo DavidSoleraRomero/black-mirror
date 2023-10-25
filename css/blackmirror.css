@@ -24,5 +24,28 @@ h1 {font-family:blackmirror;
     text-shadow: 2px 2px 2px rgb(169, 165, 165);}
 
 #wrapper{background-color: #565B64; 
-        width: 30%; /* El contenido de la página no llega de punta a punta */
+        width: 80%; /* El contenido de la página no llega de punta a punta */
         margin:auto;} /* Se centra el bloque al centro */
+
+/* Estilo de la Hero Section */ 
+
+#hero {
+    background-image: url(../img/hero.jpg); /* Imagen de fondo Hero Section */
+    height: 100vh; /* Cubre el alto de la ventana */
+    background-size: cover; /* La imagen cubre todo el fondo */
+}
+#hero button {
+    margin-left: 35.75vw; /* Veremos la solución correcta con POSICIONAMIENTOS */
+    margin-top: 75vh;
+    border: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    padding: 6px 17.5px;
+    border-radius: 15.5px;
+    background-color: #dadada;
+}
+
+#hero button:hover {
+    background-color: #1e1e1e;
+    color: white;
+}
