@@ -33,11 +33,16 @@ h1 {font-family:blackmirror;
     background-image: url(../img/hero.jpg); /* Imagen de fondo Hero Section */
     height: 100vh; /* Cubre el alto de la ventana */
     background-size: cover; /* La imagen cubre todo el fondo */
+    background-position: 50%;
+    position: relative; /* Caja que va cambiando de posición */
 }
 #hero button {
-    margin-left: 35.75vw; /* Veremos la solución correcta con POSICIONAMIENTOS */
-    margin-top: 75vh;
+    left:50%;
+    top: 75vh;
+    transform: translate(-50%, -50%); /* Regla necesaria para que el botón se quede centrado, junto a absolute, left y top */
     border: none;
+    position: absolute; /* Caja con posicionamiento fijo */
+    text-align: center;
     font-weight: bold;
     font-size: 1.1em;
     padding: 6px 17.5px;
@@ -49,3 +54,17 @@ h1 {font-family:blackmirror;
     background-color: #1e1e1e;
     color: white;
 }
+
+@media only screen and (width <= 900px) {
+    #hero {
+        background-image: url(../img/imagenmovil.webp);
+    }
+    #wrapper{
+        width : 100%;
+    }
+}
+
+@media only screen and (width <= 600px) {
+    
+}
+
