@@ -1,16 +1,18 @@
 /********************************************************/
-/*    stylesheet for Black Mirror tribute site          */
-/*    author: David Solera Romero                       */
-/*    version: 1.0                                      */
-/*    comment: project for Lenguajes de Marcas - 1ºDAM  */
+/*    Stylesheet for Black Mirror tribute site          */
+/*    Author: David Solera Romero                       */
+/*    Version: 1.0                                      */
+/*    Comment: Project for Lenguajes de Marcas - 1ºDAM  */
 /********************************************************/
-
+/* El proyecto sigue la lógica MOBILE FIRST */
 /* Incluimos una familia de fuentes */
 @font-face { src: url(../fonts/OpenSans-Regular.ttf);
             font-family: textonormal;}
 
 @font-face { src: url(../fonts/proxima-nova-bold.otf);
             font-family:blackmirror;}
+
+* {box-sizing: border-box;}
 
 body { margin:0; padding: 0; /* Eliminamos el espacio superior en el body */
     background-color: #13131c;
@@ -23,48 +25,98 @@ h1 {font-family:blackmirror;
     color:#ececed;
     text-shadow: 2px 2px 2px rgb(169, 165, 165);}
 
-#wrapper{background-color: #565B64; 
-        width: 80%; /* El contenido de la página no llega de punta a punta */
+#wrapper{background-color: #1f2021; 
+        width: 100%; /* El contenido de la página no llega de punta a punta */
         margin:auto;} /* Se centra el bloque al centro */
 
 /* Estilo de la Hero Section */ 
 
 #hero {
-    background-image: url(../img/hero.jpg); /* Imagen de fondo Hero Section */
+    background-image: url(../img/imagenmovil.webp);
     height: 100vh; /* Cubre el alto de la ventana */
     background-size: cover; /* La imagen cubre todo el fondo */
     background-position: 50%;
-    position: relative; /* Caja que va cambiando de posición */
-}
+    position: relative; /* Caja que va cambiando de posición */}
 #hero button {
     left:50%;
     top: 75vh;
-    transform: translate(-50%, -50%); /* Regla necesaria para que el botón se quede centrado, junto a absolute, left y top */
-    border: none;
+    transform: translate(-50%, -50%);} /* Regla necesaria para que el botón se quede centrado, junto a absolute, left y top */
+button {border: none;
     position: absolute; /* Caja con posicionamiento fijo */
     text-align: center;
     font-weight: bold;
     font-size: 1.1em;
     padding: 6px 17.5px;
     border-radius: 15.5px;
-    background-color: #dadada;
-}
-
-#hero button:hover {
-    background-color: #1e1e1e;
+    background-color: #dadada;}
+button:hover {
+    background-color: #000000;
     color: white;
+    transition-duration: 1s;}
+
+/* Intro Section */
+
+.grid2 {
+    display: grid;
+    grid-template-columns: 100%; /* MOBILE FIRST */
+    margin-top: 40px;
+    text-align: justify;
+    margin-bottom: 5%;
 }
 
-@media only screen and (width <= 900px) {
+.col-2 {
+    padding-left: 7.5%;
+    padding-right: 7.5%;
+    padding-top: 6.75%;
+}
+
+.grid2 img{
+    width: 100%;
+}
+
+.grid2 #col1 {
+    padding-top: 10%;
+}
+
+/* SESSIONS SECTION */
+
+.grid4 {
+    display:grid;
+    grid-template-columns: 100%;
+}
+
+.col-4 {
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: justify;
+}
+
+/* Mobile first */
+
+@media only screen and (width > 770px) {
+    .grid4 {
+        grid-template-columns: 50% 50%;
+    }
+}
+@media only screen and (width > 1090px) {
     #hero {
-        background-image: url(../img/imagenmovil.webp);
+        background-image: url(../img/hero.jpg); /* Imagen de fondo Hero Section */
     }
     #wrapper{
-        width : 100%;
+        width : 80%;
+    }
+    .grid2 {
+        grid-template-columns: 50% 50%;
+    }
+    .col-2 {
+        padding-right: 0%;
+        padding-top: 5%;
+    }
+    .grid2 #col1 {
+        padding-right: 7.5%;
+        padding-top: 12.5%;
+    }
+    .grid4 {
+        grid-template-columns: auto auto auto auto;
     }
 }
-
-@media only screen and (width <= 600px) {
-    
-}
-
