@@ -25,6 +25,13 @@ h1 {font-family:blackmirror;
     color:#ececed;
     text-shadow: 2px 2px 2px rgb(169, 165, 165);}
 
+h3 {
+    font-family:blackmirror;
+    font-weight: bold;
+    color:#ececed;
+    margin: 0;
+}
+
 #wrapper{background-color: #1f2021; 
         width: 100%; /* El contenido de la página no llega de punta a punta */
         margin:auto;} /* Se centra el bloque al centro */
@@ -61,7 +68,7 @@ button:hover {
     grid-template-columns: 100%; /* MOBILE FIRST */
     margin-top: 40px;
     text-align: justify;
-    margin-bottom: 5%;
+    margin-bottom: 4%;
 }
 
 .col-2 {
@@ -80,15 +87,37 @@ button:hover {
 
 /* SESSIONS SECTION */
 
+#sessions {
+    background-color: #131111;
+}
+
 .grid4 {
     display:grid;
     grid-template-columns: 100%;
+    padding-bottom: 4%;
+}
+
+#sessions h1 {
+    padding-top: 36px;
 }
 
 .col-4 {
-    padding-left: 10%;
-    padding-right: 10%;
+    margin-left: 5%;
+    padding-left: 5%;
+    margin-right: 5%;
+    padding-right: 5%;
     text-align: justify;
+    padding-top: 15px;
+    padding-bottom: 51px;
+    margin-bottom: 14px;
+    border: 2.5px solid white;
+    border-radius: 7.5px;
+}
+
+.grid4 img {
+    width: 100%;
+    border-radius: 3px;
+    padding-bottom: 10px;
 }
 
 /* Mobile first */
