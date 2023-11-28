@@ -8,13 +8,28 @@
     <link rel="stylesheet" href="css/blackmirror.css">
     <!-- Favicon -->
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <!-- JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./js/functions.js"></script>
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <!-- We usually use semantic tags for structure -->
     <!-- 1 nav + 1 hero section + n sections + footer -->
     <div id="wrapper"> <!-- Tiene dentro todo el contenido de la página -->
-    <nav>Barra de navegación</nav>
-
+    <div class="topnav" id="myTopnav">
+        <a href="#" class="active">BLACK MIRROR</a>
+        <a href="#intro">INTRO</a>
+        <a href="#sessions">SESSIONS</a>
+        <a href="#facts">FACTS</a>
+        <a href="./gallery.html">GALLERY</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <!-- Arrow to come back to the top -->
+    <i class="fa fa-arrow-circle-up" aria-hidden="true"></i>
     <!-- HERO SECTION -->
     <section id="hero">
         <button>Discover!</button>
@@ -28,7 +43,7 @@
             <div class="col-2">
                 <h1>INTRO</h1>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro commodi molestias rerum, a corrupti doloremque velit reprehenderit inventore numquam reiciendis iste repudiandae! Sint voluptatibus voluptatem consequatur facilis deserunt magnam alias?</p>
-                <button>Read more</button>
+                <button>READ MORE</button>
             </div> <!-- Columna 1-->
             <div class="col-2" id="col1">
                 <img src="./img/introgrid1.jpg" alt="4 imágenes de Black Mirror unidas">
@@ -43,31 +58,47 @@
                 <img src="./img/sessiongrid1.jpg" alt="Imagen de la temporada 1">
                 <h3>Session 1</h3>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor rem aspernatur dolorem, corrupti nostrum iusto?</p>
-                <button>Read more</button>
+                <button>READ MORE</button>
             </div>
             <div class="col-4">
                 <img src="./img/sessiongrid2.jpg" alt="Imagen de la temporada 1">
                 <h3>Session 2</h3>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor rem aspernatur dolorem, corrupti nostrum iusto?</p>
-                <button>Read more</button>
+                <button>READ MORE</button>
             </div>
             <div class="col-4">
                 <img src="./img/sessiongrid3.jpg" alt="Imagen de la temporada 1">
                 <h3>Session 3</h3>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor rem aspernatur dolorem, corrupti nostrum iusto?</p>
-                <button>Read more</button>
+                <button>READ MORE</button>
             </div>
             <div class="col-4">
                 <img src="./img/sessiongrid4.jpg" alt="Imagen de la temporada 1">
                 <h3>Session 4</h3>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor rem aspernatur dolorem, corrupti nostrum iusto?</p>
-                <button>Read more</button>
+                <button>READ MORE</button>
+            </div>
+            <div class="col-4">
+                <img src="./img/sessiongrid5.jpg" alt="Imagen de la temporada 1">
+                <h3>Session 5</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor rem aspernatur dolorem, corrupti nostrum iusto?</p>
+                <button>READ MORE</button>
+            </div>
+            <div class="col-4">
+                <img src="./img/sessiongrid6.jpg" alt="Imagen de la temporada 1">
+                <h3>Session 6</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor rem aspernatur dolorem, corrupti nostrum iusto?</p>
+                <button>READ MORE</button>
             </div>
         </div>
     </section>
+    <section id="facts">
+        Otra cosa
+    </section>
     <section>Otra cosa</section>
-    <section>Otra cosa</section>
-    <footer>Footer</footer>
+    <footer>
+        <a href="https://www.netflix.com/es-en/title/70264888" target="_blank">¡Visit the official website!</a>
+    </footer>
     </div>
 </body>
 </html>
