@@ -11,6 +11,7 @@
     <!-- JavaScript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="./js/functions.js"></script>
+    
     <!-- FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -22,7 +23,8 @@
         <a href="#" class="active">BLACK MIRROR</a>
         <a href="#intro">INTRO</a>
         <a href="#sessions">SESSIONS</a>
-        <a href="#facts">FACTS</a>
+        <a href="#frames">TEASERS</a>
+        <a href="#contact">CONTACT</a>
         <a href="./gallery.html">GALLERY</a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
@@ -130,15 +132,177 @@
                         <i class="fa fa-linkedin-square" aria-hidden="true"></i>
                         <i class="fa fa-instagram" aria-hidden="true"></i>
                     </li>
-                    
                 </ul>
             </div>
         </div>
+    </section>
 
+    <section id="gallery">
+        <div class="row">
+            <div class="column">
+                <div class="containerImg">
+                    <img src="https://picsum.photos/200/250" class="image">
+                    <div class="overlay">My Name is John</div>
+                </div>
+                <div class="containerImg">
+                    <img src="https://picsum.photos/200/250" class="image">
+                    <div class="overlay">My Name is John</div>
+                </div>
+                <div class="containerImg">
+                    <img class="image" src="https://picsum.photos/200/250">
+                    <div class="overlay">My Name is John</div>
+                </div>
+                <div class="containerImg">
+                    <img class="image" src="https://picsum.photos/200/150">
+                    <div class="overlay">My Name is John</div>
+                </div>
+                <div class="containerImg">
+                    <img class="image" src="https://picsum.photos/200/175">
+                    <div class="overlay">My Name is John</div>
+                </div>
+                <div class="containerImg">
+                    <img class="image" src="https://picsum.photos/100/175">
+                    <div class="overlay">My Name is John</div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="containerImg">
+                    <img class="image" src="https://picsum.photos/200/150">
+                    <div class="overlay">My Name is John</div>
+                </div>
+                <div class="containerImg">
+                    <img class="image" src="https://picsum.photos/300/175">
+                    <div class="overlay">My Name is John</div>
+                </div>
+                <div class="containerImg">
+                    <img class="image" src="https://picsum.photos/200/300">
+                    <div class="overlay">My Name is John</div>
+                </div>
+                <div class="containerImg">
+                    <img class="image" src="https://picsum.photos/100/150">
+                    <div class="overlay">My Name is John</div>
+                </div>
+                <div class="containerImg">
+                    <img class="image" src="https://picsum.photos/200/150">
+                    <div class="overlay">My Name is John</div>
+                </div>
+                <div class="containerImg">
+                    <img class="image" src="https://picsum.photos/200/250">
+                    <div class="overlay">My Name is John</div>
+                </div>
+                <div class="containerImg">
+                    <img class="image" src="https://picsum.photos/225/225">
+                    <div class="overlay">My Name is John</div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="containerImg">
+                    <img class="image" src="https://picsum.photos/200/250">
+                    <div class="overlay">My Name is John</div>
+                </div>
+                <div class="containerImg">
+                    <img class="image" src="https://picsum.photos/200/250">
+                    <div class="overlay">My Name is John</div>
+                </div>
+                <div class="containerImg">
+                    <img class="image" src="https://picsum.photos/200/250">
+                    <div class="overlay">My Name is John</div>
+                </div>
+                <div class="containerImg">
+                    <img class="image" src="https://picsum.photos/200/150">
+                    <div class="overlay">My Name is John</div>
+                </div>
+                <div class="containerImg">
+                    <img class="image" src="https://picsum.photos/200/175">
+                    <div class="overlay">My Name is John</div>
+                </div>
+                <div class="containerImg">
+                    <img class="image" src="https://picsum.photos/100/175">
+                    <div class="overlay">My Name is John</div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="containerImg">
+                    <img class="image" src="https://picsum.photos/200/150">
+                    <div class="overlay">My Name is John</div>
+                </div>
+                <div class="containerImg">
+                    <img class="image" src="https://picsum.photos/300/175">
+                    <div class="overlay">My Name is John</div>
+                </div>
+                <div class="containerImg">
+                    <img class="image" src="https://picsum.photos/200/300">
+                    <div class="overlay">My Name is John</div>
+                </div>
+                <div class="containerImg">
+                    <img class="image" src="https://picsum.photos/100/150">
+                    <div class="overlay">My Name is John</div>
+                </div>
+                <div class="containerImg">
+                    <img class="image" src="https://picsum.photos/200/150">
+                    <div class="overlay">My Name is John</div>
+                </div>
+                <div class="containerImg">
+                    <img class="image" src="https://picsum.photos/200/250">
+                    <div class="overlay">My Name is John</div>
+                </div>
+                <div class="containerImg">
+                    <img class="image" src="https://picsum.photos/225/225">
+                    <div class="overlay">My Name is John</div>
+                </div>
+            </div>
+        </div>
     </section>
     <footer>
-        <a href="https://www.netflix.com/es-en/title/70264888" target="_blank">¡Visit the official website!</a>
+        <div class="grid3">
+            <div class="col-3" id="primero">
+                <!-- Trigger/Open The Modal -->
+                <button id="myBtn">Open Modal</button>
+
+                <!-- The Modal -->
+                <div id="myModal" class="modal">
+
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>Hero section: djhgsfasdf</p>
+                    <p>Gallery section: dewrsfasdf</p>
+                    <p>Animation hero: dgfdsfasdf</p>
+                    <p>Hero section: dsfasdf</p>
+                    <p>Hero section: dsfasdf</p>
+                    <p>Hero section: dsfasdf</p>
+                    <p>Hero section: dsfasdf</p>
+                    <p>Hero section: dsfasdf</p>
+                    <p>Hero section: dsfasdf</p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-3">
+                <ul>
+                    <a href="#">
+                        <li>Home</li>
+                    </a>
+                    <a href="#intro">
+                        <li>Intro</li>
+                    </a>
+                    <a href="#sessions">
+                        <li>Seasons</li>
+                    </a>
+                    <a href="#frames">
+                        <li>Teasers</li>
+                    </a>
+                    <a href="#contact">
+                        <li>Contacto</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="col-3">
+                <a href="https://www.netflix.com/es-en/title/70264888" target="_blank"><img src="./img/netflixlogo.jpg" alt="Netflix logo"></a>
+            </div>
+        </div>
     </footer>
     </div>
+    <script src="./js/modalbox.js"></script>
 </body>
 </html>
